@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\brena\\\\Downloads\\\\files\\\\index.html\" | Measure-Object -Line\\).Lines)",
+      "Bash(ls \"C:\\\\Users\\\\brena\\\\Desktop\\\\bonfire\\\\bonfirepng\\\\teste\")"
+    ]
+  }
+}
