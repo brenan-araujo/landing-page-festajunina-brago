@@ -2106,7 +2106,7 @@
 
       .hero-bandeirinhas {
         top: 52px;
-        aspect-ratio: 390 / 78;
+        aspect-ratio: 390 / 56;
       }
 
       .hero-inner {
@@ -3146,7 +3146,7 @@
       loop: true,
       autoplay: true,
       animationData: _banderinhasReduced,
-      rendererSettings: { preserveAspectRatio: 'none' }
+      rendererSettings: { preserveAspectRatio: 'xMidYMin slice' }
     };
     lottie.loadAnimation(Object.assign({}, lottieCfg, { container: document.getElementById('lottie-hero') }));
     lottie.loadAnimation(Object.assign({}, lottieCfg, { container: document.getElementById('lottie-leads') }));
