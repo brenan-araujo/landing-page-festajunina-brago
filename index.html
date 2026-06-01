@@ -368,6 +368,125 @@
       aspect-ratio: 1440 / 100;
     }
 
+    /* ─────────────────────────────────────────────────────────────
+     HERO SLIDESHOW
+     ───────────────────────────────────────────────────────────── */
+    .hero-slideshow {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      opacity: 0;
+      animation: fadeIn 1s var(--ease-out) 0.6s forwards;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 340px;
+      height: 420px;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      background: #FFFFFF;
+      padding: 16px 16px 64px;
+      border-radius: 20px;
+      box-shadow: 0 24px 50px rgba(13, 27, 62, 0.16);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                  transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  z-index 0.5s;
+      transform: scale(0.85) rotate(-8deg) translateY(40px);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Dashed border like Festa Junina embroidery stitch */
+    .slide::after {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border: 2px dashed rgba(27, 85, 212, 0.15);
+      border-radius: 14px;
+      pointer-events: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      background: var(--fj-cream);
+    }
+
+    .slide-label {
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--fj-night);
+    }
+
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) rotate(3deg) translateY(0);
+      z-index: 10;
+    }
+
+    .slide.prev {
+      opacity: 0;
+      transform: scale(0.9) rotate(-12deg) translateY(-60px);
+      z-index: 5;
+    }
+
+    /* Add a subtle second overlapping card behind the active slide to look like a stack */
+    .slideshow-decor-card {
+      position: absolute;
+      width: 340px;
+      height: 420px;
+      background: #FFF9EE;
+      border-radius: 20px;
+      box-shadow: 0 16px 36px rgba(13, 27, 62, 0.1);
+      transform: scale(0.96) rotate(-4deg) translate(-10px, 8px);
+      z-index: 2;
+      border: 1.5px solid rgba(13, 27, 62, 0.05);
+      pointer-events: none;
+    }
+
+    @media (min-width: 1025px) {
+      .hero-inner {
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 64px;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-slideshow {
+        height: 380px;
+        margin-top: 32px;
+      }
+      .slideshow-container,
+      .slideshow-decor-card {
+        width: 290px;
+        height: 350px;
+      }
+      .slide-label {
+        font-size: 17px;
+      }
+    }
+
     .hero-inner {
       position: relative;
       z-index: 3;
@@ -2191,6 +2310,30 @@
           </div>
         </div>
       </div>
+
+      <!-- Hero Slideshow -->
+      <div class="hero-slideshow">
+        <div class="slideshow-decor-card"></div>
+        <div class="slideshow-container">
+          <div class="slide active">
+            <img src="fotos contextualizadas/IREKS GOLDEN CAKE CHOCOLATE.png" alt="Bolo de Chocolate">
+            <span class="slide-label">Bolo de Chocolate 🍫</span>
+          </div>
+          <div class="slide">
+            <img src="fotos contextualizadas/IREKS BROA DE MILHO C100.png" alt="Broa de Milho">
+            <span class="slide-label">Broa de Milho 🌽</span>
+          </div>
+          <div class="slide">
+            <img src="fotos contextualizadas/HM-05.png" alt="Embalagens Meiwa">
+            <span class="slide-label">Embalagens Meiwa 📦</span>
+          </div>
+          <div class="slide">
+            <img src="fotos contextualizadas/IREKS GOLDEN CAKE MILHO VERDE.png" alt="Bolo de Milho Verde">
+            <span class="slide-label">Bolo de Milho Verde 🍰</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Hero decoration bottom -->
@@ -3170,6 +3313,28 @@ Aguardo contato! Vem pra Brago, vem pra festa!`
         raf = null;
       });
     }, { passive: true });
+
+    // ─────────────────────────────────────────────────────────────
+    //  Hero Slideshow Logic
+    // ─────────────────────────────────────────────────────────────
+    (() => {
+      const slides = document.querySelectorAll('.hero-slideshow .slide');
+      if (!slides.length) return;
+      let currentIdx = 0;
+      setInterval(() => {
+        const prevIdx = currentIdx;
+        currentIdx = (currentIdx + 1) % slides.length;
+        
+        slides[prevIdx].classList.remove('active');
+        slides[prevIdx].classList.add('prev');
+        
+        slides[currentIdx].classList.add('active');
+        
+        setTimeout(() => {
+          slides[prevIdx].classList.remove('prev');
+        }, 1200);
+      }, 4000);
+    })();
   </script>
 
 </body>
