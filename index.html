@@ -970,91 +970,7 @@
       justify-self: center;
     }
 
-    /* Old product-stack styles (kept for back-compat) */
-    .product-stack {
-      position: absolute;
-      inset: 0;
-      background: var(--fj-night);
-      border-radius: 32px;
-      overflow: hidden;
-      box-shadow: 0 32px 80px rgba(13, 27, 62, 0.35);
-    }
 
-    .product-stack::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px 22px),
-        repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px 22px);
-    }
-
-    .product-stack-bandeiras {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 3;
-    }
-
-    .product-stack-content {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2;
-    }
-
-    /* Quentão cup illustration */
-    .quentao-illo {
-      width: 70%;
-      max-width: 340px;
-      filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.4));
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-14px);
-      }
-    }
-
-    .steam {
-      animation: steamRise 3s ease-out infinite;
-      transform-origin: bottom center;
-      opacity: 0;
-    }
-
-    .steam-2 {
-      animation-delay: -1s;
-    }
-
-    .steam-3 {
-      animation-delay: -2s;
-    }
-
-    @keyframes steamRise {
-      0% {
-        transform: translateY(20px) scaleY(0.4);
-        opacity: 0;
-      }
-
-      30% {
-        opacity: 0.4;
-      }
-
-      100% {
-        transform: translateY(-30px) scaleY(1.2);
-        opacity: 0;
-      }
-    }
 
     /* Floating badge */
     .floating-badge {
@@ -3224,15 +3140,15 @@ Aguardo contato! Vem pra Brago, vem pra festa!`
     // ─────────────────────────────────────────────────────────────
     //  Subtle parallax on hero illustrations
     // ─────────────────────────────────────────────────────────────
-    const bonfire = document.querySelector('.bonfire');
     const corn = document.querySelector('.corn');
     let raf;
     window.addEventListener('scroll', () => {
       if (raf) return;
       raf = requestAnimationFrame(() => {
         const y = window.scrollY;
-        if (corn && y < 700) corn.style.transform = `translateY(${y * 0.1}px) rotate(${y > 0 ? (y % 360 > 180 ? -2 : 2) : -2}deg)`;
-        if (corn && y < 700) corn.style.transform = `translateY(${y * 0.1}px)`;
+        if (corn && y < 700) {
+          corn.style.transform = `translateY(${y * 0.1}px)`;
+        }
         raf = null;
       });
     }, { passive: true });
