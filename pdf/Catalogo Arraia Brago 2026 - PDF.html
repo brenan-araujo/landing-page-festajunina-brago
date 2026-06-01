@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CatÃ¡logo ArraiÃ¡ Brago 2026 Â· Festa Junina Â· PDF A4</title>
+<title>Catálogo Arraiá Brago 2026 · Festa Junina · PDF A4</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Tokens â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Tokens ───────── */
 :root{
   --brago-blue:#1B55D4;
   --brago-blue-deep:#0F3FA8;
@@ -26,7 +26,7 @@
   --line-dash:#C9B988;
 }
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Page setup for PDF â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Page setup for PDF ───────── */
 @page{
   size: A4 portrait;
   margin: 0;
@@ -107,7 +107,7 @@ a{color:inherit;text-decoration:none}
   border:1px solid var(--line-dash);
 }
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Common type â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Common type ───────── */
 .eyebrow{
   display:inline-flex;align-items:center;gap:8px;
   font-weight:800;font-size:8pt;letter-spacing:.2em;text-transform:uppercase;
@@ -119,7 +119,7 @@ a{color:inherit;text-decoration:none}
 .serif{font-family:'Fraunces',serif;font-weight:900;letter-spacing:-.02em;line-height:.96}
 .serif-it{font-family:'Fraunces',serif;font-weight:900;font-style:italic;letter-spacing:-.02em}
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Bandeirinhas â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Bandeirinhas ───────── */
 .bunting{
   position:relative;width:100%;height:18mm;pointer-events:none;
   overflow:visible;
@@ -128,7 +128,7 @@ a{color:inherit;text-decoration:none}
   position:absolute;inset:0;width:100%;height:100%;overflow:visible;
 }
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Ribbons â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Ribbons ───────── */
 .red-ribbon{
   position:relative;display:inline-block;
   background:var(--brago-red);color:#fff;
@@ -155,7 +155,7 @@ a{color:inherit;text-decoration:none}
 .orange-tagline::before{left:-1.8mm;clip-path:polygon(100% 0,100% 100%,0 50%)}
 .orange-tagline::after{right:-1.8mm;clip-path:polygon(0 0,0 100%,100% 50%)}
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Plaid curve (used on cover + CTA) â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Plaid curve (used on cover + CTA) ───────── */
 .plaid-curve{
   position:absolute;left:0;right:0;bottom:0;
   height:50mm;
@@ -168,7 +168,7 @@ a{color:inherit;text-decoration:none}
 .plaid-curve .milho{right:38mm;width:28mm}
 .plaid-curve .chapeu{right:5mm;width:38mm;bottom:2mm}
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€ Page footer (slim) â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ───────── Page footer (slim) ───────── */
 .page-foot{
   position:absolute;
   bottom:8mm;left:14mm;right:14mm;
@@ -183,9 +183,9 @@ a{color:inherit;text-decoration:none}
 .pdf-page.navy .page-foot .num{color:var(--brago-yellow)}
 .pdf-page.navy .page-foot .brand img{filter:brightness(0) invert(1);opacity:.7}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   PAGE 1 â€” COVER
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+/* ═══════════════════════════════════════════════════
+   PAGE 1 — COVER
+   ═══════════════════════════════════════════════════ */
 .cover-page{padding:0}
 .cover-bunting{padding:8mm 14mm 0}
 .cover-content{
@@ -262,9 +262,9 @@ a{color:inherit;text-decoration:none}
 .cover-ribbon .orange-tag::before{left:-3mm;clip-path:polygon(100% 0,100% 100%,0 50%)}
 .cover-ribbon .orange-tag::after{right:-3mm;clip-path:polygon(0 0,0 100%,100% 50%)}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   PAGE 2 â€” SUMÃRIO + CARTA
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+/* ═══════════════════════════════════════════════════
+   PAGE 2 — SUMÁRIO + CARTA
+   ═══════════════════════════════════════════════════ */
 .std-page{padding:18mm 18mm 18mm}
 .std-page > .bunting{margin:-6mm -4mm 4mm}
 .std-page .h2{
@@ -303,9 +303,9 @@ a{color:inherit;text-decoration:none}
 .toc-card .t em{color:var(--brago-orange);font-style:italic}
 .toc-card .p{font-weight:800;font-size:8pt;letter-spacing:.18em;color:var(--ink-3)}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   SECTION OPENER (CapÃ­tulo 01 / 02)
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+/* ═══════════════════════════════════════════════════
+   SECTION OPENER (Capítulo 01 / 02)
+   ═══════════════════════════════════════════════════ */
 .opener-page{padding:0}
 .opener-page > .bunting{padding:0 14mm;margin-top:14mm}
 .opener-grid{
@@ -350,9 +350,9 @@ a{color:inherit;text-decoration:none}
 }
 .opener-page .plaid-thin svg{width:100%;height:100%;display:block}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════════════════
    HERO PRODUCT PAGE
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════ */
 .hero-page{padding:0}
 .hero-page .hero-photo{
   position:relative;
@@ -412,9 +412,9 @@ a{color:inherit;text-decoration:none}
 }
 .qr-stub strong{color:var(--brago-blue);font-weight:900;font-family:ui-monospace,monospace}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════════════════
    PRODUCT GRID PAGE
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════ */
 .grid-page{padding:18mm 14mm 18mm}
 .grid-page > .bunting{margin:-6mm -4mm 4mm;padding:0 4mm}
 .grid-head{
@@ -472,9 +472,9 @@ a{color:inherit;text-decoration:none}
 .pcards.cols-3 .pcard-name{font-size:11.5pt}
 .pcards.cols-3 .pcard-desc{font-size:8pt}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════════════════
    DUO COMBO (navy plaid page)
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════ */
 .duo-page > .bunting{padding:8mm 14mm 0}
 .duo-inner{
   padding:6mm 18mm 18mm;
@@ -506,9 +506,9 @@ a{color:inherit;text-decoration:none}
 .duo-item .n{font-family:'Fraunces',serif;font-weight:800;font-size:11pt;color:#fff;margin-top:0.5mm;letter-spacing:-.01em}
 .duo-item .u{font-weight:700;font-size:8pt;color:rgba(255,255,255,.65);letter-spacing:.04em;text-transform:uppercase;text-align:right}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════════════════
    FEATURE CARDS PAGE
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════ */
 .feat-page{padding:18mm 14mm}
 .feat-head{text-align:center;margin-bottom:8mm}
 .feat-head h3{
@@ -537,9 +537,9 @@ a{color:inherit;text-decoration:none}
 .f-card h4 em{font-style:italic;color:var(--brago-yellow)}
 .f-card p{margin-top:2mm;font-size:9pt;line-height:1.5;color:rgba(255,255,255,.85);font-weight:600}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════════════════
    FINAL CTA PAGE
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════ */
 .cta-page > .bunting{padding:8mm 14mm 0}
 .cta-page .cta-inner{
   padding:6mm 18mm 0;position:relative;z-index:2;
@@ -606,9 +606,9 @@ a{color:inherit;text-decoration:none}
 .cta-page .closing-ribbon .orange-tag::before{left:-2.5mm;clip-path:polygon(100% 0,100% 100%,0 50%)}
 .cta-page .closing-ribbon .orange-tag::after{right:-2.5mm;clip-path:polygon(0 0,0 100%,100% 50%)}
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════════════════
    BACK COVER
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   ═══════════════════════════════════════════════════ */
 .back-page{padding:0;background:var(--brago-ink);color:#fff}
 .back-page::before{
   content:'';position:absolute;top:0;left:0;right:0;height:6mm;
@@ -653,10 +653,10 @@ a{color:inherit;text-decoration:none}
 
 <body>
 
-<!-- â•â•â•â•â• Floating helper (screen only) â•â•â•â•â• -->
+<!-- ═════ Floating helper (screen only) ═════ -->
 <aside class="fab-hint no-print">
   <strong>Pronto pra exportar PDF</strong>
-  Clique no botÃ£o azul ou pressione <span class="kbd">âŒ˜ P</span> / <span class="kbd">Ctrl P</span> e escolha <strong>"Salvar como PDF"</strong>. No diÃ¡logo, deixe margens em <strong>Nenhuma</strong> e ative <strong>GrÃ¡ficos de fundo</strong>.
+  Clique no botão azul ou pressione <span class="kbd">⌘ P</span> / <span class="kbd">Ctrl P</span> e escolha <strong>"Salvar como PDF"</strong>. No diálogo, deixe margens em <strong>Nenhuma</strong> e ative <strong>Gráficos de fundo</strong>.
 </aside>
 <button class="fab-print no-print" onclick="window.print()" title="Imprimir / Salvar como PDF">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
@@ -664,9 +664,9 @@ a{color:inherit;text-decoration:none}
 </button>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 1 â€” CAPA
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 1 — CAPA
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page cover-page">
   <!-- Bandeirinhas -->
   <div class="cover-bunting">
@@ -675,26 +675,26 @@ a{color:inherit;text-decoration:none}
 
   <div class="cover-content">
     <div class="cover-logo-wrap">
-      <img src="assets/logo-arraia-brago.png" alt="ArraiÃ¡ Brago Distribuidora" class="cover-logo">
+      <img src="assets/logo-arraia-brago.png" alt="Arraiá Brago Distribuidora" class="cover-logo">
     </div>
 
     <h1 class="cover-headline">
-      <span>CatÃ¡logo</span><br>
+      <span>Catálogo</span><br>
       <span class="o">Festa</span> <span class="b"><span class="y-mark">Junina</span></span>
     </h1>
 
     <p class="cover-sub">
-      <strong>EdiÃ§Ã£o 2026</strong> Â· 15 itens selecionados pra montar seu SÃ£o JoÃ£o sem dor de cabeÃ§a â€” misturas IREKS de panificaÃ§Ã£o e embalagens tÃ©rmicas que mantÃªm o quentÃ£o fervendo e a pamonha no ponto.
+      <strong>Edição 2026</strong> · 15 itens selecionados pra montar seu São João sem dor de cabeça — misturas IREKS de panificação e embalagens térmicas que mantêm o quentão fervendo e a pamonha no ponto.
     </p>
 
     <div class="cover-photo">
-      <span class="red-ribbon">Vol. 06 Â· Junho 2026</span>
-      <img src="assets/fotos/ireks-golden-cake-fuba.png" alt="Bolo de fubÃ¡ ArraiÃ¡ Brago">
+      <span class="red-ribbon">Vol. 06 · Junho 2026</span>
+      <img src="assets/fotos/ireks-golden-cake-fuba.png" alt="Bolo de fubá Arraiá Brago">
     </div>
 
     <div class="cover-ribbon">
       <div class="blue-card">
-        AbasteÃ§a seu ArraiÃ¡<br>
+        Abasteça seu Arraiá<br>
         com a <span class="orange-word">Brago</span>
         <span class="orange-tag">Vem pra Brago, vem pra festa!</span>
       </div>
@@ -722,36 +722,36 @@ a{color:inherit;text-decoration:none}
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 2 â€” CARTA + SUMÃRIO
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 2 — CARTA + SUMÁRIO
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page std-page">
-  <div class="eyebrow"><span class="dot"></span>Carta da Brago Â· Junho 2026</div>
-  <h2 class="h2" style="margin-top:3mm">A festa que <em>nÃ£o pode parar</em>,<br>comeÃ§a no estoque certo.</h2>
+  <div class="eyebrow"><span class="dot"></span>Carta da Brago · Junho 2026</div>
+  <h2 class="h2" style="margin-top:3mm">A festa que <em>não pode parar</em>,<br>começa no estoque certo.</h2>
 
   <div class="intro-grid">
     <div class="intro-body">
       <p class="lead">
-        Esse Ã© o catÃ¡logo do <strong>ArraiÃ¡ Brago 2026</strong>. NÃ£o tem firula, nÃ£o tem item que sobra: cada produto aqui foi escolhido pensando em quem trabalha com volume â€” padaria, lanchonete, supermercado, food-service e arraiÃ¡s corporativos do Centro-Oeste.
+        Esse é o catálogo do <strong>Arraiá Brago 2026</strong>. Não tem firula, não tem item que sobra: cada produto aqui foi escolhido pensando em quem trabalha com volume — padaria, lanchonete, supermercado, food-service e arraiás corporativos do Centro-Oeste.
       </p>
       <p>
-        Combinamos <strong>misturas IREKS</strong> que entregam o sabor de roÃ§a do interior com <strong>embalagens tÃ©rmicas</strong> que resolvem o serviÃ§o quente. Tudo com pedido <strong>consignado</strong>: vocÃª pede, usa o que precisar e devolve o que nÃ£o usou â€” a Brago faz o ressarcimento. Sem encalhe â€” sÃ³ festa.
+        Combinamos <strong>misturas IREKS</strong> que entregam o sabor de roça do interior com <strong>embalagens térmicas</strong> que resolvem o serviço quente. Tudo com pedido <strong>consignado</strong>: você pede, usa o que precisar e devolve o que não usou — a Brago faz o ressarcimento. Sem encalhe — só festa.
       </p>
       <div class="sig">
         <div class="mark">B</div>
         <div class="who">
           <div class="name">Equipe Comercial Brago</div>
-          <div class="role">Atendimento Consultivo Â· DF Â· GO Â· TO Â· MS</div>
+          <div class="role">Atendimento Consultivo · DF · GO · TO · MS</div>
         </div>
       </div>
     </div>
 
     <aside class="toc-card">
-      <div class="eyebrow"><span class="dot"></span>SumÃ¡rio</div>
-      <div class="ttl">Neste catÃ¡logo</div>
+      <div class="eyebrow"><span class="dot"></span>Sumário</div>
+      <div class="ttl">Neste catálogo</div>
       <ul>
         <li><span class="n">01</span><span class="t">Bolos &amp; Misturas <em>IREKS</em></span><span class="p">P. 03</span></li>
-        <li><span class="n">02</span><span class="t">Embalagens <em>TÃ©rmicas</em></span><span class="p">P. 09</span></li>
+        <li><span class="n">02</span><span class="t">Embalagens <em>Térmicas</em></span><span class="p">P. 09</span></li>
         <li><span class="n">03</span><span class="t">Pedido <em>Consignado</em></span><span class="p">P. 14</span></li>
         <li><span class="n">04</span><span class="t">Falar com Especialista</span><span class="p">P. 15</span></li>
       </ul>
@@ -759,127 +759,127 @@ a{color:inherit;text-decoration:none}
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> CatÃ¡logo ArraiÃ¡ Brago 2026</span>
-    <span class="num">P. 02 Â· SumÃ¡rio</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Catálogo Arraiá Brago 2026</span>
+    <span class="num">P. 02 · Sumário</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 3 â€” CAPÃTULO 01 OPENER
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 3 — CAPÍTULO 01 OPENER
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page opener-page">
   <div class="bunting"></div>
 
   <div class="opener-grid">
     <div>
-      <div class="eyebrow"><span class="dot"></span>CapÃ­tulo 01</div>
+      <div class="eyebrow"><span class="dot"></span>Capítulo 01</div>
       <div class="opener-num">01<span class="dot"></span></div>
       <h2>Bolos &amp;<br>Misturas <em>IREKS</em>.</h2>
-      <p class="desc">Misturas prÃ©-prontas alemÃ£s com receita brasileira no coraÃ§Ã£o. FÃ¡cil de operar, rendimento previsÃ­vel, sabor que vende sozinho. A linha <strong>Golden Cake</strong> entrega bolos clÃ¡ssicos do Centro-Oeste; a <strong>Grano Cake</strong> Ã© a base versÃ¡til pras montagens recheadas.</p>
+      <p class="desc">Misturas pré-prontas alemãs com receita brasileira no coração. Fácil de operar, rendimento previsível, sabor que vende sozinho. A linha <strong>Golden Cake</strong> entrega bolos clássicos do Centro-Oeste; a <strong>Grano Cake</strong> é a base versátil pras montagens recheadas.</p>
     </div>
 
     <div class="opener-meta">
-      <div class="row"><div class="k">SKUs nesta seÃ§Ã£o</div><div class="v"><span class="ac">07</span> itens</div></div>
-      <div class="row"><div class="k">Marca</div><div class="v">IREKSÂ®</div></div>
-      <div class="row"><div class="k">Categoria</div><div class="v">Bolos Â· Broas Â· Cremes</div></div>
-      <div class="row"><div class="k">AplicaÃ§Ã£o</div><div class="v"><span class="or">Padaria Â· Confeitaria</span></div></div>
+      <div class="row"><div class="k">SKUs nesta seção</div><div class="v"><span class="ac">07</span> itens</div></div>
+      <div class="row"><div class="k">Marca</div><div class="v">IREKS®</div></div>
+      <div class="row"><div class="k">Categoria</div><div class="v">Bolos · Broas · Cremes</div></div>
+      <div class="row"><div class="k">Aplicação</div><div class="v"><span class="or">Padaria · Confeitaria</span></div></div>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> CapÃ­tulo 01 Â· IREKS</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Capítulo 01 · IREKS</span>
     <span class="num">P. 03</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 4 â€” HERO GOLDEN CAKE FUBÃ
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 4 — HERO GOLDEN CAKE FUBÁ
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page hero-page">
   <div class="hero-photo">
-    <span class="red-ribbon">SKU IRKÂ·GCÂ·FUBÃ</span>
+    <span class="red-ribbon">SKU IRK·GC·FUBÁ</span>
     <span class="badge">Mais vendido de junho</span>
-    <img src="assets/fotos/ireks-golden-cake-fuba.png" alt="Bolo de fubÃ¡">
+    <img src="assets/fotos/ireks-golden-cake-fuba.png" alt="Bolo de fubá">
   </div>
   <div class="hero-info">
-    <div class="brand-line">IREKS Â· Golden Cake Â· Linha Junina</div>
-    <h3>Golden Cake Sabor <em>FubÃ¡</em>.</h3>
-    <p class="desc">Mistura para bolo de fubÃ¡. O clÃ¡ssico do arraiÃ¡ na medida certa â€” <strong>consistÃªncia</strong> garantida a cada fornada, sem variaÃ§Ã£o de receita, sem desperdÃ­cio. Rende atÃ© 18 bolos por saco.</p>
+    <div class="brand-line">IREKS · Golden Cake · Linha Junina</div>
+    <h3>Golden Cake Sabor <em>Fubá</em>.</h3>
+    <p class="desc">Mistura para bolo de fubá. O clássico do arraiá na medida certa — <strong>consistência</strong> garantida a cada fornada, sem variação de receita, sem desperdício. Rende até 18 bolos por saco.</p>
 
     <div class="spec-grid">
       <div class="spec"><div class="k">Embalagem</div><div class="v">Saco 10 kg<small>4 un / caixa</small></div></div>
-      <div class="spec"><div class="k">Rendimento</div><div class="v">~ 18 bolos<small>600 g cada Â· por saco</small></div></div>
-      <div class="spec"><div class="k">Forno</div><div class="v">35â€“40 min<small>180 Â°C convencional</small></div></div>
+      <div class="spec"><div class="k">Rendimento</div><div class="v">~ 18 bolos<small>600 g cada · por saco</small></div></div>
+      <div class="spec"><div class="k">Forno</div><div class="v">35–40 min<small>180 °C convencional</small></div></div>
       <div class="spec"><div class="k">Validade</div><div class="v">9 meses<small>seco e arejado</small></div></div>
     </div>
 
     <div class="cta-row">
       <span class="btn-wa-print">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
-        WhatsApp Â· <strong>(61) 99999-9999</strong>
+        WhatsApp · <strong>(61) 99999-9999</strong>
       </span>
-      <span class="orange-tagline">Cheirinho de fubÃ¡ no forno</span>
+      <span class="orange-tagline">Cheirinho de fubá no forno</span>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 Â· IREKS Golden Cake</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 · IREKS Golden Cake</span>
     <span class="num">P. 04</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 5 â€” HERO BROA DE MILHO
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 5 — HERO BROA DE MILHO
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page hero-page">
   <div class="hero-photo">
-    <span class="red-ribbon">SKU IRKÂ·BRMÂ·C100</span>
+    <span class="red-ribbon">SKU IRK·BRM·C100</span>
     <span class="badge">Linha Brasilidade</span>
     <img src="assets/fotos/ireks-broa-milho.png" alt="Broa de milho">
   </div>
   <div class="hero-info">
-    <div class="brand-line">IREKS Â· Linha Brasilidade</div>
+    <div class="brand-line">IREKS · Linha Brasilidade</div>
     <h3>Broa de <em>Milho</em> C100.</h3>
-    <p class="desc">Mistura completa para broa de milho. Receita pronta, <strong>sabor autÃªntico de festa junina</strong>. AÃ§Ãºcar cristalizado por cima, miolo macio e amarelinho. Vai bem no cafÃ© da manhÃ£ e dispara nas vendas em junho.</p>
+    <p class="desc">Mistura completa para broa de milho. Receita pronta, <strong>sabor autêntico de festa junina</strong>. Açúcar cristalizado por cima, miolo macio e amarelinho. Vai bem no café da manhã e dispara nas vendas em junho.</p>
 
     <div class="spec-grid">
       <div class="spec"><div class="k">Embalagem</div><div class="v">Saco 10 kg<small>4 un / caixa</small></div></div>
-      <div class="spec"><div class="k">Rendimento</div><div class="v">~ 220 broas<small>45 g cada Â· por saco</small></div></div>
-      <div class="spec"><div class="k">Forno</div><div class="v">18â€“22 min<small>180 Â°C convencional</small></div></div>
+      <div class="spec"><div class="k">Rendimento</div><div class="v">~ 220 broas<small>45 g cada · por saco</small></div></div>
+      <div class="spec"><div class="k">Forno</div><div class="v">18–22 min<small>180 °C convencional</small></div></div>
       <div class="spec"><div class="k">Validade</div><div class="v">9 meses<small>seco e arejado</small></div></div>
     </div>
 
     <div class="cta-row">
       <span class="btn-wa-print">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
-        WhatsApp Â· <strong>(61) 99999-9999</strong>
+        WhatsApp · <strong>(61) 99999-9999</strong>
       </span>
-      <span class="orange-tagline">Sabor de roÃ§a</span>
+      <span class="orange-tagline">Sabor de roça</span>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 Â· IREKS Brasilidade</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 · IREKS Brasilidade</span>
     <span class="num">P. 05</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 6 â€” GRID OUTROS GOLDEN CAKE
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 6 — GRID OUTROS GOLDEN CAKE
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page grid-page">
   <div class="grid-head">
     <div class="l">
       <div class="eyebrow"><span class="dot"></span>Linha Golden Cake</div>
-      <h3 style="margin-top:2mm">Outros sabores que <em>fazem o arraiÃ¡</em>.</h3>
+      <h3 style="margin-top:2mm">Outros sabores que <em>fazem o arraiá</em>.</h3>
     </div>
     <div class="r">
-      <div class="k">SKUs na pÃ¡gina</div>
-      <div class="v">04 sabores Â· IREKS</div>
+      <div class="k">SKUs na página</div>
+      <div class="v">04 sabores · IREKS</div>
     </div>
   </div>
 
@@ -887,54 +887,54 @@ a{color:inherit;text-decoration:none}
     <article class="pcard">
       <div class="pcard-img"><span class="red-ribbon-mini">Junino</span><img src="assets/fotos/ireks-golden-cake-milho-verde.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">IRKÂ·GCÂ·MV</div>
+        <div class="pcard-sku">IRK·GC·MV</div>
         <div class="pcard-name">Golden Cake Sabor <em>Milho Verde</em></div>
         <p class="pcard-desc">Mistura para bolo de milho verde. O favorito das festas juninas.</p>
-        <div class="pcard-meta"><div class="u">Saco Â· <strong>10 kg</strong></div><div class="badge">Sazonal</div></div>
+        <div class="pcard-meta"><div class="u">Saco · <strong>10 kg</strong></div><div class="badge">Sazonal</div></div>
       </div>
     </article>
 
     <article class="pcard">
       <div class="pcard-img"><span class="red-ribbon-mini">Curinga</span><img src="assets/fotos/ireks-golden-cake-tapioca.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">IRKÂ·GCÂ·TAP</div>
+        <div class="pcard-sku">IRK·GC·TAP</div>
         <div class="pcard-name">Golden Cake Sabor <em>Tapioca</em></div>
-        <p class="pcard-desc">Mistura para bolo de tapioca. Textura Ãºnica e sabor nordestino marcante.</p>
-        <div class="pcard-meta"><div class="u">Saco Â· <strong>10 kg</strong></div><div class="badge">VersÃ¡til</div></div>
+        <p class="pcard-desc">Mistura para bolo de tapioca. Textura única e sabor nordestino marcante.</p>
+        <div class="pcard-meta"><div class="u">Saco · <strong>10 kg</strong></div><div class="badge">Versátil</div></div>
       </div>
     </article>
 
     <article class="pcard">
       <div class="pcard-img"><img src="assets/fotos/ireks-golden-cake-chocolate.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">IRKÂ·GCÂ·CHO</div>
+        <div class="pcard-sku">IRK·GC·CHO</div>
         <div class="pcard-name">Golden Cake Sabor <em>Chocolate</em></div>
-        <p class="pcard-desc">Mistura para bolo de chocolate. Cremoso, Ãºmido e irresistÃ­vel.</p>
-        <div class="pcard-meta"><div class="u">Saco Â· <strong>10 kg</strong></div><div class="badge">Premium</div></div>
+        <p class="pcard-desc">Mistura para bolo de chocolate. Cremoso, úmido e irresistível.</p>
+        <div class="pcard-meta"><div class="u">Saco · <strong>10 kg</strong></div><div class="badge">Premium</div></div>
       </div>
     </article>
 
     <article class="pcard">
       <div class="pcard-img"><img src="assets/fotos/ireks-golden-cake-apim.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">IRKÂ·GCÂ·APIM</div>
+        <div class="pcard-sku">IRK·GC·APIM</div>
         <div class="pcard-name">Golden Cake Sabor <em>Aipim</em></div>
         <p class="pcard-desc">Mistura para bolo de aipim. Sabor regional que conquista nas festas juninas.</p>
-        <div class="pcard-meta"><div class="u">Saco Â· <strong>10 kg</strong></div><div class="badge">Margem alta</div></div>
+        <div class="pcard-meta"><div class="u">Saco · <strong>10 kg</strong></div><div class="badge">Margem alta</div></div>
       </div>
     </article>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 Â· Outros sabores</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 · Outros sabores</span>
     <span class="num">P. 06</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 7 â€” DUO COMBO (Navy)
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 7 — DUO COMBO (Navy)
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page navy duo-page">
   <div class="bunting"></div>
 
@@ -943,7 +943,7 @@ a{color:inherit;text-decoration:none}
       <div class="eyebrow on-navy"><span class="dot"></span>Combo Recheado</div>
     </div>
     <h3>O bolo recheado que <em>se vende sozinho</em>.</h3>
-    <p class="desc">A dupla perfeita: a base neutra <strong>Grano Cake</strong> (mistura multigrÃ£os) + o recheio cremoso <strong>Golden Creme</strong> confeiteiro. Monta rÃ¡pido, fatia bem, aguenta vitrine. Margem alta, retrabalho zero.</p>
+    <p class="desc">A dupla perfeita: a base neutra <strong>Grano Cake</strong> (mistura multigrãos) + o recheio cremoso <strong>Golden Creme</strong> confeiteiro. Monta rápido, fatia bem, aguenta vitrine. Margem alta, retrabalho zero.</p>
 
     <div class="duo-photo">
       <img src="assets/fotos/ireks-grano-golden-creme.png" alt="Grano Cake recheado com Golden Creme">
@@ -952,51 +952,51 @@ a{color:inherit;text-decoration:none}
     <div class="duo-list">
       <div class="duo-item">
         <div>
-          <div class="sku">IRK Â· GRC Â· BASE</div>
+          <div class="sku">IRK · GRC · BASE</div>
           <div class="n">Grano Cake &amp; Golden Creme</div>
         </div>
-        <div class="u">Saco Â· 10 kg + Balde Â· 6 kg</div>
+        <div class="u">Saco · 10 kg + Balde · 6 kg</div>
       </div>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 Â· Combo Recheado</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 01 · Combo Recheado</span>
     <span class="num">P. 07</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 8 â€” FEATURE CARDS (Por que Brago)
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 8 — FEATURE CARDS (Por que Brago)
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page feat-page">
   <div class="feat-head">
     <div class="eyebrow"><span class="dot"></span>Por que comprar na Brago</div>
     <h3>Quatro motivos pra <em>vir pra festa</em>.</h3>
-    <p>Os pilares que fazem da Brago a parceira certa do seu ArraiÃ¡ â€” e do seu dia-a-dia o ano inteiro.</p>
+    <p>Os pilares que fazem da Brago a parceira certa do seu Arraiá — e do seu dia-a-dia o ano inteiro.</p>
   </div>
 
   <div class="feat-grid">
     <div class="f-card">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
       <h4>Grande<br><em>Variedade</em></h4>
-      <p>Tudo o que vocÃª precisa pro arraiÃ¡ em um sÃ³ lugar â€” IREKS, Meiwa, Ecopack e mais.</p>
+      <p>Tudo o que você precisa pro arraiá em um só lugar — IREKS, Meiwa, Ecopack e mais.</p>
     </div>
     <div class="f-card">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
       <h4>Qualidade<br><em>Comprovada</em></h4>
-      <p>Marcas lÃ­deres que o profissional usa. Receita previsÃ­vel, sabor que vende sozinho.</p>
+      <p>Marcas líderes que o profissional usa. Receita previsível, sabor que vende sozinho.</p>
     </div>
     <div class="f-card">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
-      <h4>PreÃ§os<br><em>Especiais</em></h4>
-      <p>CondiÃ§Ãµes B2B que cabem no bolso da operaÃ§Ã£o, com pedido <strong>consignado</strong>.</p>
+      <h4>Preços<br><em>Especiais</em></h4>
+      <p>Condições B2B que cabem no bolso da operação, com pedido <strong>consignado</strong>.</p>
     </div>
     <div class="f-card">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
       <h4>Agilidade<br><em>na Entrega</em></h4>
-      <p>Frota prÃ³pria. Pedido atÃ© 14h sai no mesmo dia â€” DF, GO, TO e MS.</p>
+      <p>Frota própria. Pedido até 14h sai no mesmo dia — DF, GO, TO e MS.</p>
     </div>
   </div>
 
@@ -1007,121 +1007,121 @@ a{color:inherit;text-decoration:none}
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 9 â€” CAPÃTULO 02 OPENER
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 9 — CAPÍTULO 02 OPENER
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page opener-page">
   <div class="bunting"></div>
 
   <div class="opener-grid">
     <div>
-      <div class="eyebrow" style="color:var(--brago-orange)"><span class="dot" style="background:var(--brago-blue)"></span>CapÃ­tulo 02</div>
+      <div class="eyebrow" style="color:var(--brago-orange)"><span class="dot" style="background:var(--brago-blue)"></span>Capítulo 02</div>
       <div class="opener-num orange">02<span class="dot"></span></div>
       <h2>Embalagens<br>&amp; <em>Delivery</em>.</h2>
-      <p class="desc">Marmitex, copos, pratos e cumbucas tÃ©rmicos para servir quentÃ£o fervendo, pamonha fumegante e milho na palha sem cair pra mesa fria. Linha completa pra arraiÃ¡ de barraca, food-service e festa corporativa.</p>
+      <p class="desc">Marmitex, copos, pratos e cumbucas térmicos para servir quentão fervendo, pamonha fumegante e milho na palha sem cair pra mesa fria. Linha completa pra arraiá de barraca, food-service e festa corporativa.</p>
     </div>
 
     <div class="opener-meta">
-      <div class="row"><div class="k">SKUs nesta seÃ§Ã£o</div><div class="v"><span class="or">08</span> itens</div></div>
-      <div class="row"><div class="k">Material</div><div class="v">TÃ©rmico atÃ³xico</div></div>
-      <div class="row"><div class="k">Marcas</div><div class="v">Meiwa Â· Ecopack</div></div>
-      <div class="row"><div class="k">AplicaÃ§Ã£o</div><div class="v"><span class="ac">Quente Â· Delivery Â· Self</span></div></div>
+      <div class="row"><div class="k">SKUs nesta seção</div><div class="v"><span class="or">08</span> itens</div></div>
+      <div class="row"><div class="k">Material</div><div class="v">Térmico atóxico</div></div>
+      <div class="row"><div class="k">Marcas</div><div class="v">Meiwa · Ecopack</div></div>
+      <div class="row"><div class="k">Aplicação</div><div class="v"><span class="ac">Quente · Delivery · Self</span></div></div>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> CapÃ­tulo 02 Â· Embalagens</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Capítulo 02 · Embalagens</span>
     <span class="num">P. 09</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 10 â€” HERO PL-15F QUENTÃƒO
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 10 — HERO PL-15F QUENTÃO
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page hero-page">
   <div class="hero-photo">
-    <span class="red-ribbon">SKU PLÂ·15F Â· Meiwa</span>
+    <span class="red-ribbon">SKU PL·15F · Meiwa</span>
     <span class="badge">Top de junho</span>
     <img src="assets/fotos/pl-15f.png" alt="Cumbuca PL-15F com arroz doce">
   </div>
   <div class="hero-info">
-    <div class="brand-line">Meiwa Â· Cumbuca TÃ©rmica Â· Sobremesas</div>
-    <h3>PL-15F â€” <em>Prato com compartimento 300 ml</em>.</h3>
-    <p class="desc">Prato com compartimento PL-15F 300 ml. <strong>Caixa com 600 unidades</strong> â€” estoque completo para o arraiÃ¡. Borda rÃ­gida, base estÃ¡vel, nÃ£o derrete no calor das sobremesas quentes.</p>
+    <div class="brand-line">Meiwa · Cumbuca Térmica · Sobremesas</div>
+    <h3>PL-15F — <em>Prato com compartimento 300 ml</em>.</h3>
+    <p class="desc">Prato com compartimento PL-15F 300 ml. <strong>Caixa com 600 unidades</strong> — estoque completo para o arraiá. Borda rígida, base estável, não derrete no calor das sobremesas quentes.</p>
 
     <div class="spec-grid">
-      <div class="spec"><div class="k">Capacidade</div><div class="v">300 ml<small>borda rÃ­gida</small></div></div>
+      <div class="spec"><div class="k">Capacidade</div><div class="v">300 ml<small>borda rígida</small></div></div>
       <div class="spec"><div class="k">Embalagem</div><div class="v">Caixa 600 un<small>estoque completo</small></div></div>
-      <div class="spec"><div class="k">Formato</div><div class="v">Com compartimento<small>base estÃ¡vel</small></div></div>
-      <div class="spec"><div class="k">AplicaÃ§Ã£o</div><div class="v">ArraiÃ¡<small>Arroz doce Â· Canjica Â· Curau</small></div></div>
+      <div class="spec"><div class="k">Formato</div><div class="v">Com compartimento<small>base estável</small></div></div>
+      <div class="spec"><div class="k">Aplicação</div><div class="v">Arraiá<small>Arroz doce · Canjica · Curau</small></div></div>
     </div>
 
     <div class="cta-row">
       <span class="btn-wa-print">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
-        WhatsApp Â· <strong>(61) 99999-9999</strong>
+        WhatsApp · <strong>(61) 99999-9999</strong>
       </span>
-      <span class="orange-tagline">Arroz doce no ponto, do balcÃ£o Ã  mesa</span>
+      <span class="orange-tagline">Arroz doce no ponto, do balcão à mesa</span>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 Â· Meiwa Sobremesas</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 · Meiwa Sobremesas</span>
     <span class="num">P. 10</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 11 â€” HERO HM-05
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 11 — HERO HM-05
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page hero-page">
   <div class="hero-photo">
-    <span class="red-ribbon">SKU HMÂ·05 Â· Meiwa</span>
+    <span class="red-ribbon">SKU HM·05 · Meiwa</span>
     <span class="badge">Junino</span>
     <img src="assets/fotos/hm-05.png" alt="Marmita HM-05 com milho na palha">
   </div>
   <div class="hero-info">
-    <div class="brand-line">Meiwa Â· Marmita TÃ©rmica Â· Junina</div>
-    <h3>HM-05 â€” <em>Embalagem para Sanduiche</em>.</h3>
-    <p class="desc">Embalagem HM-05 para sanduiche (C/150). <strong>Perfeita para cachorro-quente e lanches do arraiÃ¡</strong> â€” prÃ¡tica, de rÃ¡pido manuseio e que nÃ£o suja a mÃ£o de quem serve.</p>
+    <div class="brand-line">Meiwa · Marmita Térmica · Junina</div>
+    <h3>HM-05 — <em>Embalagem para Sanduiche</em>.</h3>
+    <p class="desc">Embalagem HM-05 para sanduiche (C/150). <strong>Perfeita para cachorro-quente e lanches do arraiá</strong> — prática, de rápido manuseio e que não suja a mão de quem serve.</p>
 
     <div class="spec-grid">
-      <div class="spec"><div class="k">DimensÃ£o</div><div class="v">21 Ã— 21 cm<small>altura Ãºtil 6 cm</small></div></div>
-      <div class="spec"><div class="k">Embalagem</div><div class="v">Fardo 100 un<small>10 Ã— 10 un</small></div></div>
+      <div class="spec"><div class="k">Dimensão</div><div class="v">21 × 21 cm<small>altura útil 6 cm</small></div></div>
+      <div class="spec"><div class="k">Embalagem</div><div class="v">Fardo 100 un<small>10 × 10 un</small></div></div>
       <div class="spec"><div class="k">Tampa</div><div class="v">Articulada<small>encaixe livro</small></div></div>
-      <div class="spec"><div class="k">AplicaÃ§Ã£o</div><div class="v">Sanduiche<small>Cachorro-quente</small></div></div>
+      <div class="spec"><div class="k">Aplicação</div><div class="v">Sanduiche<small>Cachorro-quente</small></div></div>
     </div>
 
     <div class="cta-row">
       <span class="btn-wa-print">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
-        WhatsApp Â· <strong>(61) 99999-9999</strong>
+        WhatsApp · <strong>(61) 99999-9999</strong>
       </span>
       <span class="orange-tagline">Festa de barraca</span>
     </div>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 Â· Meiwa HM</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 · Meiwa HM</span>
     <span class="num">P. 11</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 12 â€” GRID HM Family
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 12 — GRID HM Family
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page grid-page">
   <div class="grid-head">
     <div class="l">
-      <div class="eyebrow"><span class="dot"></span>Linha HM Â· Marmitas TÃ©rmicas</div>
-      <h3 style="margin-top:2mm">Pra cada <em>prato do arraiÃ¡</em>, uma marmita.</h3>
+      <div class="eyebrow"><span class="dot"></span>Linha HM · Marmitas Térmicas</div>
+      <h3 style="margin-top:2mm">Pra cada <em>prato do arraiá</em>, uma marmita.</h3>
     </div>
     <div class="r">
-      <div class="k">VariaÃ§Ãµes</div>
-      <div class="v">3 tamanhos Â· Meiwa</div>
+      <div class="k">Variações</div>
+      <div class="v">3 tamanhos · Meiwa</div>
     </div>
   </div>
 
@@ -1129,30 +1129,30 @@ a{color:inherit;text-decoration:none}
     <article class="pcard">
       <div class="pcard-img"><span class="red-ribbon-mini">Pequena</span><img src="assets/fotos/hm-02f.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">HMÂ·02F</div>
-        <div class="pcard-name">HM-02F Â· <em>Pequena</em></div>
-        <p class="pcard-desc">Embalagem marmitex HM-02F Meiwa. VersÃ¡til para pratos quentes e self-service.</p>
-        <div class="pcard-meta"><div class="u">Fardo Â· <strong>100 un</strong></div></div>
+        <div class="pcard-sku">HM·02F</div>
+        <div class="pcard-name">HM-02F · <em>Pequena</em></div>
+        <p class="pcard-desc">Embalagem marmitex HM-02F Meiwa. Versátil para pratos quentes e self-service.</p>
+        <div class="pcard-meta"><div class="u">Fardo · <strong>100 un</strong></div></div>
       </div>
     </article>
 
     <article class="pcard">
       <div class="pcard-img"><img src="assets/fotos/hm-03.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">HMÂ·03</div>
-        <div class="pcard-name">HM-03 Â· <em>Pamonha</em></div>
-        <p class="pcard-desc">Embalagem HM-03 Meiwa para fast food e lanche. PrÃ¡tica e econÃ´mica.</p>
-        <div class="pcard-meta"><div class="u">Fardo Â· <strong>100 un</strong></div></div>
+        <div class="pcard-sku">HM·03</div>
+        <div class="pcard-name">HM-03 · <em>Pamonha</em></div>
+        <p class="pcard-desc">Embalagem HM-03 Meiwa para fast food e lanche. Prática e econômica.</p>
+        <div class="pcard-meta"><div class="u">Fardo · <strong>100 un</strong></div></div>
       </div>
     </article>
 
     <article class="pcard">
       <div class="pcard-img"><span class="red-ribbon-mini">Grande</span><img src="assets/fotos/hm-07.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">HMÂ·07</div>
-        <div class="pcard-name">HM-07 Â· <em>Grande</em></div>
-        <p class="pcard-desc">Embalagem HM-07 Meiwa. Ideal para porÃ§Ãµes e preparaÃ§Ãµes diversas.</p>
-        <div class="pcard-meta"><div class="u">Fardo Â· <strong>100 un</strong></div></div>
+        <div class="pcard-sku">HM·07</div>
+        <div class="pcard-name">HM-07 · <em>Grande</em></div>
+        <p class="pcard-desc">Embalagem HM-07 Meiwa. Ideal para porções e preparações diversas.</p>
+        <div class="pcard-meta"><div class="u">Fardo · <strong>100 un</strong></div></div>
       </div>
     </article>
   </div>
@@ -1162,13 +1162,13 @@ a{color:inherit;text-decoration:none}
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6mm;align-items:center">
       <div>
         <div class="eyebrow" style="font-size:7.5pt"><span class="dot"></span>Linha Meiwa</div>
-        <h4 style="font-family:'Fraunces',serif;font-weight:900;font-size:16pt;line-height:1.05;color:var(--ink);margin-top:2mm;letter-spacing:-.01em">Marmita tÃ©rmica que <em style="color:var(--brago-orange);font-style:italic">nÃ£o suja a mÃ£o</em>.</h4>
+        <h4 style="font-family:'Fraunces',serif;font-weight:900;font-size:16pt;line-height:1.05;color:var(--ink);margin-top:2mm;letter-spacing:-.01em">Marmita térmica que <em style="color:var(--brago-orange);font-style:italic">não suja a mão</em>.</h4>
       </div>
       <div>
-        <p style="font-size:9.5pt;line-height:1.5;color:var(--ink-2);font-weight:500">Articulada com tampa-livro, vedaÃ§Ã£o simples e parede grossa. CompatÃ­vel com micro-ondas curto (atÃ© 90 seg) e empilhÃ¡vel no transporte.</p>
+        <p style="font-size:9.5pt;line-height:1.5;color:var(--ink-2);font-weight:500">Articulada com tampa-livro, vedação simples e parede grossa. Compatível com micro-ondas curto (até 90 seg) e empilhável no transporte.</p>
       </div>
       <div style="display:grid;gap:2mm">
-        <div style="display:flex;justify-content:space-between;padding:1.6mm 0;border-bottom:0.3mm dashed var(--line-dash);font-size:8.5pt"><span style="font-weight:800;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase">Material</span><span style="font-family:'Fraunces',serif;font-weight:700;color:var(--ink)">AtÃ³xico</span></div>
+        <div style="display:flex;justify-content:space-between;padding:1.6mm 0;border-bottom:0.3mm dashed var(--line-dash);font-size:8.5pt"><span style="font-weight:800;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase">Material</span><span style="font-family:'Fraunces',serif;font-weight:700;color:var(--ink)">Atóxico</span></div>
         <div style="display:flex;justify-content:space-between;padding:1.6mm 0;border-bottom:0.3mm dashed var(--line-dash);font-size:8.5pt"><span style="font-weight:800;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase">Validade</span><span style="font-family:'Fraunces',serif;font-weight:700;color:var(--ink)">Ilimitada</span></div>
         <div style="display:flex;justify-content:space-between;padding:1.6mm 0;font-size:8.5pt"><span style="font-weight:800;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase">Garantia</span><span style="font-family:'Fraunces',serif;font-weight:700;color:var(--brago-blue)">Caixa fechada</span></div>
       </div>
@@ -1176,23 +1176,23 @@ a{color:inherit;text-decoration:none}
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 Â· Linha HM Â· Pratos</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 · Linha HM · Pratos</span>
     <span class="num">P. 12</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 13 â€” MINI POTES + COMPLEMENTAR
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 13 — MINI POTES + COMPLEMENTAR
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page grid-page">
   <div class="grid-head">
     <div class="l">
-      <div class="eyebrow" style="color:var(--brago-orange)"><span class="dot" style="background:var(--brago-blue)"></span>Prato Â· Copo Â· Bolo</div>
-      <h3 style="margin-top:2mm">Pra <em>pamonha e quentÃ£o</em><br>&amp; o bolo na vitrine.</h3>
+      <div class="eyebrow" style="color:var(--brago-orange)"><span class="dot" style="background:var(--brago-blue)"></span>Prato · Copo · Bolo</div>
+      <h3 style="margin-top:2mm">Pra <em>pamonha e quentão</em><br>&amp; o bolo na vitrine.</h3>
     </div>
     <div class="r">
-      <div class="k">SKUs na pÃ¡gina</div>
+      <div class="k">SKUs na página</div>
       <div class="v">3 itens + Kit sugerido</div>
     </div>
   </div>
@@ -1201,30 +1201,30 @@ a{color:inherit;text-decoration:none}
     <article class="pcard">
       <div class="pcard-img"><span class="red-ribbon-mini">Tradicional</span><img src="assets/fotos/pl-18.png" alt=""></div>
       <div class="pcard-body">
-        <div class="pcard-sku">PLÂ·18 Â· Meiwa</div>
-        <div class="pcard-name">PL-18 Â· <em>Prato DescartÃ¡vel</em></div>
-        <p class="pcard-desc">Prato descartÃ¡vel PL-18 Meiwa. Caixa fechada para a temporada toda. Ideal para pratos principais.</p>
-        <div class="pcard-meta"><div class="u">Pcte Â· <strong>50 un</strong></div><div class="badge">ClÃ¡ssico SJ</div></div>
+        <div class="pcard-sku">PL·18 · Meiwa</div>
+        <div class="pcard-name">PL-18 · <em>Prato Descartável</em></div>
+        <p class="pcard-desc">Prato descartável PL-18 Meiwa. Caixa fechada para a temporada toda. Ideal para pratos principais.</p>
+        <div class="pcard-meta"><div class="u">Pcte · <strong>50 un</strong></div><div class="badge">Clássico SJ</div></div>
       </div>
     </article>
 
     <article class="pcard">
-      <div class="pcard-img"><span class="red-ribbon-mini">Copo</span><img src="assets/fotos/cp-180.png" alt="Copo isÃ³por CP-180 com quentÃ£o"></div>
+      <div class="pcard-img"><span class="red-ribbon-mini">Copo</span><img src="assets/fotos/cp-180.png" alt="Copo isópor CP-180 com quentão"></div>
       <div class="pcard-body">
-        <div class="pcard-sku">CPÂ·180 Â· Meiwa</div>
-        <div class="pcard-name">CP-180 Â· <em>Copo IsÃ³por</em> 180 ml</div>
-        <p class="pcard-desc">Copo tÃ©rmico de isopor 180 ml. Ideal para quentÃ£o, caldos e bebidas quentes. Segura o calor longe da mÃ£o.</p>
-        <div class="pcard-meta"><div class="u">Cx Â· <strong>500 un</strong></div><div class="badge">QuentÃ£o</div></div>
+        <div class="pcard-sku">CP·180 · Meiwa</div>
+        <div class="pcard-name">CP-180 · <em>Copo Isópor</em> 180 ml</div>
+        <p class="pcard-desc">Copo térmico de isopor 180 ml. Ideal para quentão, caldos e bebidas quentes. Segura o calor longe da mão.</p>
+        <div class="pcard-meta"><div class="u">Cx · <strong>500 un</strong></div><div class="badge">Quentão</div></div>
       </div>
     </article>
 
     <article class="pcard">
       <div class="pcard-img"><span class="red-ribbon-mini">Bolo</span><img src="assets/fotos/mp13tpb.png" alt="Embalagem MP-13TPB com bolo e tampa transparente"></div>
       <div class="pcard-body">
-        <div class="pcard-sku">MPÂ·13TPB Â· Meiwa</div>
-        <div class="pcard-name">MP-13TPB Â· <em>Embalagem c/ Tampa</em></div>
-        <p class="pcard-desc">Pote MP-13 com tampa PB. Ideal para sobremesas, canjica, caldos e porÃ§Ãµes. Caixa fechada.</p>
-        <div class="pcard-meta"><div class="u">Cx Â· <strong>1000 un</strong></div><div class="badge">Best-seller</div></div>
+        <div class="pcard-sku">MP·13TPB · Meiwa</div>
+        <div class="pcard-name">MP-13TPB · <em>Embalagem c/ Tampa</em></div>
+        <p class="pcard-desc">Pote MP-13 com tampa PB. Ideal para sobremesas, canjica, caldos e porções. Caixa fechada.</p>
+        <div class="pcard-meta"><div class="u">Cx · <strong>1000 un</strong></div><div class="badge">Best-seller</div></div>
       </div>
     </article>
 
@@ -1233,51 +1233,51 @@ a{color:inherit;text-decoration:none}
         <div class="pcard-sku" style="color:var(--brago-yellow)">DICA DA BRAGO</div>
         <div class="pcard-name" style="color:#fff;font-size:13pt;margin-top:1.5mm">O <em style="color:var(--brago-yellow)">kit Festa Junina</em> que mais sai</div>
         <ul style="margin-top:3mm;list-style:none">
-          <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 1 saco IREKS Golden Cake FubÃ¡ <strong style="color:#fff">(10 kg)</strong></li>
+          <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 1 saco IREKS Golden Cake Fubá <strong style="color:#fff">(10 kg)</strong></li>
           <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 1 saco IREKS Broa de Milho <strong style="color:#fff">(10 kg)</strong></li>
-          <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 2 cx Meiwa PL-15F quentÃ£o <strong style="color:#fff">(1000 un)</strong></li>
+          <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 2 cx Meiwa PL-15F quentão <strong style="color:#fff">(1000 un)</strong></li>
           <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 2 fardos Meiwa HM-05 milho <strong style="color:#fff">(200 un)</strong></li>
           <li style="display:flex;gap:2mm;padding:1mm 0;font-size:8.5pt;color:rgba(255,255,255,.88);font-weight:600;line-height:1.35"><span style="color:var(--brago-yellow);font-weight:900">+</span> 1 cx Meiwa CP-180 cumbuca <strong style="color:#fff">(500 un)</strong></li>
         </ul>
-        <p style="margin-top:3mm;font-size:8pt;color:rgba(255,255,255,.7);font-weight:600;font-style:italic">Atende ~150 convidados Â· Consignado Â· ReposiÃ§Ã£o sob demanda.</p>
+        <p style="margin-top:3mm;font-size:8pt;color:rgba(255,255,255,.7);font-weight:600;font-style:italic">Atende ~150 convidados · Consignado · Reposição sob demanda.</p>
       </div>
     </article>
   </div>
 
   <div class="page-foot">
-    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 Â· Mini &amp; Kit</span>
+    <span class="brand"><img src="assets/logo-brago.png" alt=""> Cap. 02 · Mini &amp; Kit</span>
     <span class="num">P. 13</span>
   </div>
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 14 â€” CTA FINAL (Navy)
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 14 — CTA FINAL (Navy)
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page navy cta-page">
   <div class="bunting"></div>
 
   <div class="cta-inner">
-    <div class="eyebrow on-navy"><span class="dot"></span>Como pedir Â· em 4 passos</div>
-    <h2 style="margin-top:3mm">Seu SÃ£o JoÃ£o<br>mais <em>tranquilo</em>, na Brago.</h2>
-    <p class="lead">Manda um zap, conta o que vocÃª precisa, a gente monta o mix consignado e entrega em <strong>24-48h</strong> em qualquer ponto de DF, GO, TO ou MS. Sem cadastro chato, sem formulÃ¡rio, sem pegadinha.</p>
+    <div class="eyebrow on-navy"><span class="dot"></span>Como pedir · em 4 passos</div>
+    <h2 style="margin-top:3mm">Seu São João<br>mais <em>tranquilo</em>, na Brago.</h2>
+    <p class="lead">Manda um zap, conta o que você precisa, a gente monta o mix consignado e entrega em <strong>24-48h</strong> em qualquer ponto de DF, GO, TO ou MS. Sem cadastro chato, sem formulário, sem pegadinha.</p>
 
     <div class="cta-card-print">
-      <div class="ck">VocÃª tem pedido</div>
+      <div class="ck">Você tem pedido</div>
       <h4><em>Consignado.</em></h4>
       <ul>
-        <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>VocÃª pede o mix combinado pra Festa Junina e recebe tudo pronto pra usar.</li>
-        <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Usa sÃ³ o que precisar durante o arraiÃ¡ â€” o que nÃ£o usou, Ã© sÃ³ separar.</li>
+        <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Você pede o mix combinado pra Festa Junina e recebe tudo pronto pra usar.</li>
+        <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Usa só o que precisar durante o arraiá — o que não usou, é só separar.</li>
         <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>A Brago busca o que sobrou e faz o <strong>ressarcimento</strong> do que voltou.*</li>
-        <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>ReposiÃ§Ã£o sob demanda durante todo o mÃªs. Manda no zap.</li>
+        <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Reposição sob demanda durante todo o mês. Manda no zap.</li>
       </ul>
-      <p class="foot">*VÃ¡lido apenas para caixas fechadas.</p>
+      <p class="foot">*Válido apenas para caixas fechadas.</p>
     </div>
   </div>
 
   <div class="closing-ribbon">
     <div class="blue-card">
-      AbasteÃ§a seu ArraiÃ¡<br>com a <span class="orange-word">Brago</span>
+      Abasteça seu Arraiá<br>com a <span class="orange-word">Brago</span>
       <span class="orange-tag">Vem pra Brago, vem pra festa!</span>
     </div>
   </div>
@@ -1289,22 +1289,22 @@ a{color:inherit;text-decoration:none}
 </section>
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PÃGINA 15 â€” CONTRACAPA
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════════════════════════════════════════════
+     PÁGINA 15 — CONTRACAPA
+     ═══════════════════════════════════════════════════ -->
 <section class="pdf-page back-page">
   <div class="back-bunting">
     <div class="bunting"></div>
   </div>
 
   <div class="back-content">
-    <img src="assets/logo-arraia-brago.png" alt="ArraiÃ¡ Brago" class="back-logo">
+    <img src="assets/logo-arraia-brago.png" alt="Arraiá Brago" class="back-logo">
 
     <div class="back-tag">
-      AbasteÃ§a seu arraiÃ¡<br>
+      Abasteça seu arraiá<br>
       com a <span class="y">Brago.</span>
     </div>
-    <p class="back-sub">DistribuiÃ§Ã£o B2B de panificaÃ§Ã£o, embalagens e higiene profissional para o Centro-Oeste e Norte. Abastecimento Ã¡gil pra quem nÃ£o pode parar.</p>
+    <p class="back-sub">Distribuição B2B de panificação, embalagens e higiene profissional para o Centro-Oeste e Norte. Abastecimento ágil pra quem não pode parar.</p>
 
     <div class="back-cols">
       <div class="back-col">
@@ -1315,35 +1315,35 @@ a{color:inherit;text-decoration:none}
       </div>
       <div class="back-col">
         <h5>Cobertura</h5>
-        <a><strong>BrasÃ­lia Â· DF</strong></a>
-        <a>GoiÃ¢nia Â· GO</a>
-        <a>Palmas Â· TO</a>
-        <a>Campo Grande Â· MS</a>
+        <a><strong>Brasília · DF</strong></a>
+        <a>Goiânia · GO</a>
+        <a>Palmas · TO</a>
+        <a>Campo Grande · MS</a>
       </div>
       <div class="back-col">
         <h5>Nossas marcas</h5>
-        <a>IREKS Â· Meiwa</a>
-        <a>Ecopack Â· Tork</a>
-        <a>Oleak Â· Doremus</a>
-        <a>Doupan Â· Farine</a>
+        <a>IREKS · Meiwa</a>
+        <a>Ecopack · Tork</a>
+        <a>Oleak · Doremus</a>
+        <a>Doupan · Farine</a>
       </div>
     </div>
   </div>
 
   <div class="back-foot">
-    <span>Â© 2026 Brago Distribuidora Â· CNPJ 00.000.000/0001-00</span>
-    <span class="pill">EdiÃ§Ã£o N.Â°06 Â· Junho 2026</span>
+    <span>© 2026 Brago Distribuidora · CNPJ 00.000.000/0001-00</span>
+    <span class="pill">Edição N.°06 · Junho 2026</span>
   </div>
 </section>
 
 <script>
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-   Bandeirinhas estÃ¡ticas â€” idÃªnticas Ã  landing page, sem animaÃ§Ã£o
-   Gera um SVG rico (pentÃ¡gono + triÃ¢ngulo alternados) em cada .bunting
-   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ─────────────────────────────────────────────────────────────
+   Bandeirinhas estáticas — idênticas à landing page, sem animação
+   Gera um SVG rico (pentágono + triângulo alternados) em cada .bunting
+   ───────────────────────────────────────────────────────────── */
 (function(){
   var COLORS = ['#1B55D4','#F08A1A','#F5C842','#C0392B'];
-  var N = 22; // nÃºmero de bandeirinhas
+  var N = 22; // número de bandeirinhas
 
   function buildBuntingSVG(el, onNavy){
     var W = el.offsetWidth || 760;
@@ -1352,7 +1352,7 @@ a{color:inherit;text-decoration:none}
     svg.setAttribute('viewBox','0 0 ' + W + ' ' + H);
     svg.setAttribute('preserveAspectRatio','none');
 
-    // Fio curvo (catenÃ¡ria)
+    // Fio curvo (catenária)
     var wireColor = onNavy ? 'rgba(255,255,255,0.45)' : '#0D1B3E';
     var cx = W / 2;
     var cy = H * 0.38;
@@ -1368,7 +1368,7 @@ a{color:inherit;text-decoration:none}
     // Colocar bandeirinhas ao longo da curva
     for(var i = 0; i < N; i++){
       var t = i / (N - 1);
-      // Ponto na curva de bÃ©zier quadrÃ¡tica
+      // Ponto na curva de bézier quadrática
       var bx = (1-t)*(1-t)*0 + 2*(1-t)*t*cx + t*t*W;
       var by = (1-t)*(1-t)*0 + 2*(1-t)*t*(H*0.72) + t*t*0;
 
@@ -1378,16 +1378,16 @@ a{color:inherit;text-decoration:none}
 
       var g = document.createElementNS('http://www.w3.org/2000/svg','g');
 
-      // Alternar entre triÃ¢ngulo e pentÃ¡gono (trapÃ©zio)
+      // Alternar entre triângulo e pentágono (trapézio)
       var shape = document.createElementNS('http://www.w3.org/2000/svg','polygon');
       var pts;
       if(i % 2 === 0){
-        // TriÃ¢ngulo isÃ³sceles
+        // Triângulo isósceles
         pts = (bx - fw/2) + ',' + by + ' '
             + (bx + fw/2) + ',' + by + ' '
             + bx + ',' + (by + fh);
       } else {
-        // PentÃ¡gono (forma de bandeirinha com ponta)
+        // Pentágono (forma de bandeirinha com ponta)
         var tw = fw * 0.82;
         pts = (bx - fw/2) + ',' + by + ' '
             + (bx + fw/2) + ',' + by + ' '
@@ -1410,7 +1410,7 @@ a{color:inherit;text-decoration:none}
     buildBuntingSVG(el, onNavy);
   });
 
-  // Re-gerar no resize (para impressÃ£o)
+  // Re-gerar no resize (para impressão)
   window.addEventListener('resize', function(){
     document.querySelectorAll('.bunting').forEach(function(el){
       var onNavy = el.closest('.navy') !== null;
